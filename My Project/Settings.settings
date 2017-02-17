@@ -1,0 +1,95 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="PhoneNumDBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.2.194\SQLEXPRESS;Initial Catalog=PhoneNumDB;Persist Security Info=True;User ID=sa;Password=mstech2016&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.2.194\SQLEXPRESS;Initial Catalog=PhoneNumDB;Persist Security Info=True;User ID=sa;Password=mstech2016</Value>
+    </Setting>
+    <Setting Name="grdMain_phonenum_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="grdMain_branch_name_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="grdMain_staff_name_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="grdMain_carnum1_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="grdMain_musen_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="grdMain_ton_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="grdMain_car_branch_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="grdMain_max_load_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="grdMain_limit_menkyo_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">9</Value>
+    </Setting>
+    <Setting Name="grdMain_limit_syaken_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="frmMain_Top" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+    <Setting Name="frmMain_Left" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">593</Value>
+    </Setting>
+    <Setting Name="frmMain_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1138</Value>
+    </Setting>
+    <Setting Name="frmMain_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">655</Value>
+    </Setting>
+    <Setting Name="grdMain_car_length_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">11</Value>
+    </Setting>
+    <Setting Name="grdMain_car_width_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+    <Setting Name="grdMain_car_height_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">13</Value>
+    </Setting>
+    <Setting Name="grdMain_bed_length_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">14</Value>
+    </Setting>
+    <Setting Name="grdMain_bed_width_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="grdMain_bed_height_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="grdMain_maker_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">17</Value>
+    </Setting>
+    <Setting Name="grdMain_car_type_DisplayIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">18</Value>
+    </Setting>
+    <Setting Name="FileServerPath_Menkyo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\192.168.8.190\minorsys\MPP\menkyo</Value>
+    </Setting>
+    <Setting Name="FIleServerPath_Syaken" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\192.168.8.190\minorsys\MPP\syaken</Value>
+    </Setting>
+    <Setting Name="FileServerPath_Jibai" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\192.168.8.190\minorsys\MPP\jibai</Value>
+    </Setting>
+    <Setting Name="FileSeverPath_Crane" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\192.168.8.190\minorsys\MPP\crane</Value>
+    </Setting>
+    <Setting Name="FileServerPath_Other" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\192.168.8.190\minorsys\MPP\other</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

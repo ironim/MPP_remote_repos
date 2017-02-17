@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{037D8889-E5D3-4FF5-817D-D4B935C32ACA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MPP.My.MyApplication</StartupObject>
+    <RootNamespace>MPP</RootNamespace>
+    <AssemblyName>MPP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\192.168.8.190\share\700. システム\DistributeFile\MPP\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>人・電話番号・車両</ProductName>
+    <PublisherName>minorsys</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>21</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MPP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MPP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>M.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>26EF0C26CF027CB02708975AE23C1A905F37C5F8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MPP_一時キー.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAdmin.Designer.vb">
+      <DependentUpon>frmAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrd.Designer.vb">
+      <DependentUpon>frmGrd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterCar.Designer.vb">
+      <DependentUpon>frmMasterCar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterCar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterCarEdit.Designer.vb">
+      <DependentUpon>frmMasterCarEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterCarEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterCarNew.Designer.vb">
+      <DependentUpon>frmMasterCarNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterCarNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterPhone.Designer.vb">
+      <DependentUpon>frmMasterPhone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterPhone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterPhoneEdit.Designer.vb">
+      <DependentUpon>frmMasterPhoneEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterPhoneEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterPhoneNew.Designer.vb">
+      <DependentUpon>frmMasterPhoneNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterPhoneNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterStaff.Designer.vb">
+      <DependentUpon>frmMasterStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterStaffEdit.Designer.vb">
+      <DependentUpon>frmMasterStaffEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterStaffEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterStaffNew.Designer.vb">
+      <DependentUpon>frmMasterStaffNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterStaffNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenkyoUpload.Designer.vb">
+      <DependentUpon>frmMenkyoUpload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenkyoUpload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifier.Designer.vb">
+      <DependentUpon>frmModifier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.Designer.vb">
+      <DependentUpon>frmPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgressSyakenMenkyo.Designer.vb">
+      <DependentUpon>frmProgressSyakenMenkyo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgressSyakenMenkyo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSyakenUpload.Designer.vb">
+      <DependentUpon>frmSyakenUpload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSyakenUpload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PhoneNumDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhoneNumDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneNumDBDataSet.vb">
+      <DependentUpon>PhoneNumDBDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrd.resx">
+      <DependentUpon>frmGrd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterCar.resx">
+      <DependentUpon>frmMasterCar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterCarEdit.resx">
+      <DependentUpon>frmMasterCarEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterCarNew.resx">
+      <DependentUpon>frmMasterCarNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterPhone.resx">
+      <DependentUpon>frmMasterPhone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterPhoneEdit.resx">
+      <DependentUpon>frmMasterPhoneEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterPhoneNew.resx">
+      <DependentUpon>frmMasterPhoneNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterStaff.resx">
+      <DependentUpon>frmMasterStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterStaffEdit.resx">
+      <DependentUpon>frmMasterStaffEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterStaffNew.resx">
+      <DependentUpon>frmMasterStaffNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenkyoUpload.resx">
+      <DependentUpon>frmMenkyoUpload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifier.resx">
+      <DependentUpon>frmModifier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassword.resx">
+      <DependentUpon>frmPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgressSyakenMenkyo.resx">
+      <DependentUpon>frmProgressSyakenMenkyo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSyakenUpload.resx">
+      <DependentUpon>frmSyakenUpload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MPP_一時キー.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="PhoneNumDBDataSet.xsc">
+      <DependentUpon>PhoneNumDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PhoneNumDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PhoneNumDBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PhoneNumDBDataSet.xss">
+      <DependentUpon>PhoneNumDBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="M.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
